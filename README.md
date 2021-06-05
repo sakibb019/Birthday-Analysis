@@ -7,6 +7,9 @@ births = pd.read_csv("births.csv")
 print(births.head()) births['day'].fillna(0, inplace=True) 
 births['day'] = births['day'].astype(int)`
 
+![1](https://user-images.githubusercontent.com/40710717/120894734-cecf6300-c63b-11eb-9d39-29a3b3fad2db.JPG)
+
+
 > `births['decade'] = 10 * (births['year'] // 10)
 births.pivot_table('births', index='decade', columns='gender', aggfunc='sum')
 print(births.head())`
